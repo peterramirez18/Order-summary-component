@@ -19,8 +19,13 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-.container {
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
   background-color: #e0e8ff;
+}
+
+.container {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,11 +41,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-.container .bg {
-  position: absolute;
-  top: 0;
 }
 
 .container .ordercontainer {

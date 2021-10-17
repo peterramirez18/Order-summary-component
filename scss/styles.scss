@@ -1,20 +1,20 @@
 @import "_variables";
 @import "_globals";
 
-.container{
+body{
+     background-image:  url(../images/pattern-background-desktop.svg);
+     background-repeat: repeat-x;
      background-color: $PaleBlue;
+}
+
+.container{
+     
      height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      position: relative;
-     
-
-     .bg {
-          position: absolute;
-          top: 0;
-     }
 
      .ordercontainer{
           width: 28.125rem;
