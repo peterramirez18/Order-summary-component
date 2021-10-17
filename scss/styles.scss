@@ -1,0 +1,126 @@
+@import "_variables";
+@import "_globals";
+
+.container{
+     background-color: $PaleBlue;
+     height: 56.25rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     
+
+     .bg {
+          position: absolute;
+          top: 0;
+     }
+
+     .ordercontainer{
+          width: 28.125rem;
+          height: 43.5625rem;
+          background-color: #fff;
+          border-radius: 1.2rem;
+          overflow: hidden;
+          align-items: center;
+          z-index: 10;
+          
+          .order_info{
+               margin: auto;
+               width: 79%;
+               .title{
+                    text-align: center;
+                    margin-top: 3.8rem;   
+                    font-size: 1.8rem;
+                    color: $DarkBlue;
+               }
+     
+               .paragraph{
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2.2rem;
+                    text-align: center; 
+                    line-height: 1.65rem;
+                    color: $DesaturatedBlue;
+               }
+     
+               .plan{
+                    background-color: $VeryPaleBlue;
+                    height: 6.0625rem;
+                    margin-top: 1.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1.5rem;
+                    border-radius: 0.7rem;
+                    
+
+
+                    .infoplan{
+                         flex: 1;
+                         margin-left: 1.2rem;
+                         
+                         & h1{
+                              font-size: 1rem;
+                              margin-bottom: 1.5rem;
+                              text-align: left;
+                              color: $DarkBlue;
+                         }
+
+                         & h2{
+                              font-size: 1rem;
+                              font-weight: 500;
+                              color: $DesaturatedBlue;
+                         }  
+                    }
+
+                    & a{
+                         color: $BrightBlue;
+                         font-size: 0.95rem ;
+                         text-decoration:underline;
+
+                         &:hover{
+                              opacity: 0.8;
+                              cursor: pointer;
+                         }
+                    }
+               }
+
+               & button{
+                    background-color: $BrightBlue;
+                    border: none;
+                    width: 100%;
+                    padding: 1rem 0rem;
+                    margin-top: 2rem;
+                    border-radius: 0.7rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: $PaleBlue;
+                    box-shadow: 0px 9px 30px rgba(56, 42, 225, 0.44);
+
+                    &:hover{
+                         opacity: 0.8;
+                         cursor: pointer;
+                    }
+
+               }
+               .cancel-order{
+                    font-size: 1rem;
+                    margin-top: 2.6rem;
+                    text-align: center;
+                    color: $DesaturatedBlue;
+
+                    &:hover{
+                        color: $DarkBlue;
+                         cursor: pointer;
+                    }
+               }
+          }   
+     }
+}
+
+.attribution{
+     font-size: 1rem;
+     position: absolute;
+     bottom: 1rem;
+}

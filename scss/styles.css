@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-color: #e0e8ff;
+  height: 56.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .bg {
+  position: absolute;
+  top: 0;
+}
+
+.container .ordercontainer {
+  width: 28.125rem;
+  height: 43.5625rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.container .ordercontainer .order_info {
+  margin: auto;
+  width: 79%;
+}
+
+.container .ordercontainer .order_info .title {
+  text-align: center;
+  margin-top: 3.8rem;
+  font-size: 1.8rem;
+  color: #1f2f56;
+}
+
+.container .ordercontainer .order_info .paragraph {
+  width: 90%;
+  margin: auto;
+  margin-top: 2.2rem;
+  text-align: center;
+  line-height: 1.65rem;
+  color: #7280a7;
+}
+
+.container .ordercontainer .order_info .plan {
+  background-color: #f5f7ff;
+  height: 6.0625rem;
+  margin-top: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+}
+
+.container .ordercontainer .order_info .plan .infoplan {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 1.2rem;
+}
+
+.container .ordercontainer .order_info .plan .infoplan h1 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: #1f2f56;
+}
+
+.container .ordercontainer .order_info .plan .infoplan h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.container .ordercontainer .order_info .plan a {
+  color: #3829e0;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+.container .ordercontainer .order_info .plan a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.container .ordercontainer .order_info button {
+  background-color: #3829e0;
+  border: none;
+  width: 100%;
+  padding: 1rem 0rem;
+  margin-top: 2rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e8ff;
+  -webkit-box-shadow: 0px 9px 30px rgba(56, 42, 225, 0.44);
+          box-shadow: 0px 9px 30px rgba(56, 42, 225, 0.44);
+}
+
+.container .ordercontainer .order_info button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.container .ordercontainer .order_info .cancel-order {
+  font-size: 1rem;
+  margin-top: 2.6rem;
+  text-align: center;
+  color: #7280a7;
+}
+
+.container .ordercontainer .order_info .cancel-order:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
