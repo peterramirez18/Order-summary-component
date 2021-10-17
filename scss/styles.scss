@@ -3,7 +3,7 @@
 
 .container{
      background-color: $PaleBlue;
-     height: 56.25rem;
+     height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -24,15 +24,29 @@
           overflow: hidden;
           align-items: center;
           z-index: 10;
+
+          @media (max-width: 510px) {
+               height: 90vh;
+               width: 90%;
+          }
           
           .order_info{
                margin: auto;
                width: 79%;
+
+               @media (max-width: 510px) {
+                    width: 90%;
+               }
                .title{
                     text-align: center;
                     margin-top: 3.8rem;   
                     font-size: 1.8rem;
                     color: $DarkBlue;
+
+                    @media (max-width: 510px) {
+                        font-size: 1.4rem;
+                        margin-top: 2.3rem;
+                    }
                }
      
                .paragraph{
@@ -42,6 +56,12 @@
                     text-align: center; 
                     line-height: 1.65rem;
                     color: $DesaturatedBlue;
+
+                    @media (max-width: 510px) {
+                         font-size: 0.8rem;
+                         line-height: 1.2rem;
+                         margin-top: 2rem;
+                    }
                }
      
                .plan{
@@ -53,6 +73,10 @@
                     align-items: center;
                     padding: 1.5rem;
                     border-radius: 0.7rem;
+
+                    @media (max-width: 510px) {
+                         height: 5rem;
+                     }
                     
 
 
@@ -98,6 +122,10 @@
                     color: $PaleBlue;
                     box-shadow: 0px 9px 30px rgba(56, 42, 225, 0.44);
 
+                    @media (max-width: 510px) {
+                        margin-top: 1rem;
+                     }
+
                     &:hover{
                          opacity: 0.8;
                          cursor: pointer;
@@ -110,6 +138,10 @@
                     text-align: center;
                     color: $DesaturatedBlue;
 
+                    @media (max-width: 510px) {
+                         margin-top: 2rem;
+                      }
+
                     &:hover{
                         color: $DarkBlue;
                          cursor: pointer;
@@ -120,7 +152,11 @@
 }
 
 .attribution{
-     font-size: 1rem;
+     font-size: 0.5rem;
      position: absolute;
      bottom: 1rem;
+
+     @media (max-width: 510px) {
+         display: none;
+     }
 }

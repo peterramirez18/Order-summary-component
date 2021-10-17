@@ -21,7 +21,7 @@ body {
 
 .container {
   background-color: #e0e8ff;
-  height: 56.25rem;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,9 +55,22 @@ body {
   z-index: 10;
 }
 
+@media (max-width: 510px) {
+  .container .ordercontainer {
+    height: 90vh;
+    width: 90%;
+  }
+}
+
 .container .ordercontainer .order_info {
   margin: auto;
   width: 79%;
+}
+
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info {
+    width: 90%;
+  }
 }
 
 .container .ordercontainer .order_info .title {
@@ -67,6 +80,13 @@ body {
   color: #1f2f56;
 }
 
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info .title {
+    font-size: 1.4rem;
+    margin-top: 2.3rem;
+  }
+}
+
 .container .ordercontainer .order_info .paragraph {
   width: 90%;
   margin: auto;
@@ -74,6 +94,14 @@ body {
   text-align: center;
   line-height: 1.65rem;
   color: #7280a7;
+}
+
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info .paragraph {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top: 2rem;
+  }
 }
 
 .container .ordercontainer .order_info .plan {
@@ -91,6 +119,12 @@ body {
           align-items: center;
   padding: 1.5rem;
   border-radius: 0.7rem;
+}
+
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info .plan {
+    height: 5rem;
+  }
 }
 
 .container .ordercontainer .order_info .plan .infoplan {
@@ -138,6 +172,12 @@ body {
           box-shadow: 0px 9px 30px rgba(56, 42, 225, 0.44);
 }
 
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info button {
+    margin-top: 1rem;
+  }
+}
+
 .container .ordercontainer .order_info button:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -150,14 +190,26 @@ body {
   color: #7280a7;
 }
 
+@media (max-width: 510px) {
+  .container .ordercontainer .order_info .cancel-order {
+    margin-top: 2rem;
+  }
+}
+
 .container .ordercontainer .order_info .cancel-order:hover {
   color: #1f2f56;
   cursor: pointer;
 }
 
 .attribution {
-  font-size: 1rem;
+  font-size: 0.5rem;
   position: absolute;
   bottom: 1rem;
+}
+
+@media (max-width: 510px) {
+  .attribution {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
